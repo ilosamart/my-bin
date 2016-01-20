@@ -2,7 +2,8 @@ function searchPacman() {
 	pgrep pacman
 	return $?
 }
-
+export LESS='-R'
+export LESSOPEN='|~/bin/lessfilter %s'
 export PATH="${PATH}:~/bin"
 export JAVA_HOME=/opt/default-jdk
 export EDITOR="vim"
