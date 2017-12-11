@@ -1,0 +1,31 @@
+[user]
+	name = Fábio Tramasoli
+	email = fabio@tramasoli.com
+
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+    cam = commit -a -m 
+    mt = mergetool
+    a = add 
+    rs = reset --hard HEAD
+    # log
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+    ls = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+    depara = diff-tree --no-commit-id --name-status -r
+    # git flow 
+    ffs = flow feature start 
+    fff = flow feature finish
+    fhs = flow hotfix start 
+    fhf = flow hotfix finish
+    frs = flow release start 
+    frf = flow release finish
+
+[push]
+	default = matching
